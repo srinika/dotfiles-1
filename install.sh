@@ -38,3 +38,6 @@ sh -c "$(curl "https://raw.githubusercontent.com/git/git/master/contrib/completi
 
 # Download and install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# Run the vscode script
+./vscode.sh
