@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e
 ############################
 # This script creates symlinks from the home directory to any desired dotfiles in ${homedir}/dotfiles
 # And also installs Homebrew Packages
@@ -16,7 +17,7 @@ homedir=$1
 dotfiledir=${homedir}/dotfiles
 
 # list of files/folders to symlink in ${homedir}
-files="bash_profile bashrc bash_prompt aliases private"
+files="bashrc bash_profile aliases zshrc macos"
 
 # change to the dotfiles directory
 echo "Changing to the ${dotfiledir} directory"
@@ -30,10 +31,10 @@ for file in ${files}; do
 done
 
 # Download Git Auto-Completion
-curl "https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash" > ${homedir}/.git-completion.bash
+sh -c "$(curl "https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash" > ${homedir}/.git-completion.bash)"
 
 # Run the Homebrew Script
 ./brew.sh
 
-# Run the Sublime Script
-./sublime.sh
+# Download and install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
