@@ -1,5 +1,5 @@
 # Load dotfiles:
-for file in ~/.{bashrc,bash_profile,aliases,zshrc,macos}; do
+for file in ~/.{aliases,zshrc,macos}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
