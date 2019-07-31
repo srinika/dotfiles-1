@@ -7,9 +7,15 @@ DISABLE_AUTO_TITLE="false"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
+# Load dotfiles:
+for file in ~/.{aliases,zshrc,macos}; do
+    [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
+
 # Plugins
 plugins=(
-   git kubectl osx vscode zsh-autosuggestions zsh-syntax-highlighting 
+   git kubectl osx vscode 
 )
 
 # Theme
