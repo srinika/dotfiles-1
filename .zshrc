@@ -16,3 +16,6 @@ plugins=(
 ZSH_THEME="spaceship"
 
 source $ZSH/oh-my-zsh.sh
+
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
