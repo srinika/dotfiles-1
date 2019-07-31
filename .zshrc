@@ -8,7 +8,7 @@ ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Load dotfiles:
-for file in ~/.{aliases,zshrc,macos}; do
+for file in ~/.{aliases,macos}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
