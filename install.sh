@@ -17,7 +17,7 @@ homedir=$1
 dotfiledir=${homedir}/dotfiles
 
 # list of files/folders to symlink in ${homedir}
-files="bashrc bash_profile aliases zshrc macos"
+files="bashrc bash_profile aliases macos"
 
 # change to the dotfiles directory
 echo "Changing to the ${dotfiledir} directory"
@@ -38,6 +38,13 @@ sh -c "$(curl "https://raw.githubusercontent.com/git/git/master/contrib/completi
 
 # Download and install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# download and install spaceship theme for oh-my-zsh
+npm install -g spaceship-zsh-theme
+
+# create .zshrc symlink to dotfiles .zshrc
+ln -sf ${dotfiledir}/.zshrc ${homedir}/.zshrc
+source ${homedir}/.zshrc
 
 # Run the vscode script
 ./vscode.sh
