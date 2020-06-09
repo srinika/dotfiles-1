@@ -6,6 +6,7 @@ set -e
 
 # Install Brew Packages
 brew install python
+brew install alfred
 brew install tree
 brew install awscli
 brew install azure-cli
@@ -14,22 +15,26 @@ brew install serverless
 brew install terraform
 brew install kops
 brew install mysql
-brew install git
+brew install git || brew upgrade git || true
 brew install go
-brew install zsh
+brew install zsh || brew upgrade zsh || true
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 
 # Install MacOS Applications
-brew cask install google-chrome
-brew cask install firefox
-brew cask install vlc
-brew cask install iterm2
-brew cask install visual-studio-code
+brew cask install google-chrome || true
+brew cask install firefox || true
+brew cask install vlc || true
+brew cask install iterm2 || true
+brew cask install intellij-idea || true
+brew cask install visual-studio-code || true
 
 # Install Source Code Pro Font
 brew tap homebrew/cask-fonts
 brew cask install font-fira-code
+
+# Install brew auto update
+brew tap domt4/autoupdate
 
 # Remove outdated versions from the cellar.
 brew cleanup

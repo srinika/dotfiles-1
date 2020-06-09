@@ -36,11 +36,14 @@ sh -c "$(curl "https://raw.githubusercontent.com/git/git/master/contrib/completi
 # Run the Homebrew Script
 ./brew.sh
 
+# Set brew auto update running  on the background
+brew autoupdate --start --upgrade --cleanup
+
 # Download and install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" || true
 
 # download and install spaceship theme for oh-my-zsh
-npm install -g spaceship-zsh-theme
+npm install -g spaceship-zsh-theme || true
 
 # create .zshrc symlink to dotfiles .zshrc
 ln -sf ${dotfiledir}/.zshrc ${homedir}/.zshrc
