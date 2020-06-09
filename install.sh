@@ -43,7 +43,7 @@ brew autoupdate --start --upgrade --cleanup
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" || true
 
 # download and install spaceship theme for oh-my-zsh
-npm install -g spaceship-zsh-theme || true
+npm install -g spaceship-prompt || true
 
 # create .zshrc symlink to dotfiles .zshrc
 ln -sf ${dotfiledir}/.zshrc ${homedir}/.zshrc
