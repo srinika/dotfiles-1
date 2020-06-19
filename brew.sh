@@ -28,6 +28,7 @@ brew cask install vlc || true
 brew cask install iterm2 || true
 brew cask install intellij-idea || true
 brew cask install visual-studio-code || true
+brew cask install authy || true
 
 # Install Source Code Pro Font
 brew tap homebrew/cask-fonts
