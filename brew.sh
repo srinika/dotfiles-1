@@ -9,8 +9,10 @@ brew install python
 brew install alfred
 brew install tree
 brew install awscli
+brew insatll aws-cdk
 brew install azure-cli
 brew install node
+brew install typescript
 brew install serverless
 brew install terraform
 brew install kops
