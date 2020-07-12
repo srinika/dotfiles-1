@@ -7,7 +7,7 @@
     "debug.console.fontFamily": "'Fira Code',Menlo, Monaco, 'Courier New', monospace",
     "window.zoomLevel": 0,
     "workbench.startupEditor": "newUntitledFile",
-    "files.autoSave": "off",
+    "files.autoSave": "afterDelay",
     "git.autofetch": true,
     "python.linting.enabled": true,
     "terminal.integrated.rendererType": "dom",
@@ -27,5 +27,28 @@
     },
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "aws.profile": "profile:dh-dev",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "files.autoSaveDelay": 3000,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "yaml.customTags": [
+        "!And",
+        "!If",
+        "!Not",
+        "!Equals",
+        "!Or",
+        "!FindMap sequence",
+        "!Base64",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Join sequence"
+    ]
 }
