@@ -5,7 +5,7 @@
     "editor.fontLigatures": true,
     "editor.fontFamily": "'Fira Code',Menlo, Monaco, 'Courier New', monospace",
     "debug.console.fontFamily": "'Fira Code',Menlo, Monaco, 'Courier New', monospace",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "workbench.startupEditor": "newUntitledFile",
     "files.autoSave": "afterDelay",
     "git.autofetch": true,
