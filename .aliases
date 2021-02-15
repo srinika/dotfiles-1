@@ -8,6 +8,7 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias proj="cd ~/Projects"
 alias g="git"
+alias cls="clear"
 
 alias ch='history | grep "git commit"'
 alias hg='history | grep'
