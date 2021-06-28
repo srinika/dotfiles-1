@@ -24,17 +24,17 @@ brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 
 # Install MacOS Applications
-brew cask install google-chrome || true
-brew cask install firefox || true
-brew cask install vlc || true
-brew cask install iterm2 || true
-brew cask install intellij-idea || true
-brew cask install visual-studio-code || true
-brew cask install authy || true
+brew install --cask google-chrome || true
+brew install --cask firefox || true
+brew install --cask vlc || true
+brew install --cask iterm2 || true
+brew install --cask intellij-idea || true
+brew install --cask visual-studio-code || true
+brew install --cask authy || true
 
 # Install Source Code Pro Font
 brew tap homebrew/cask-fonts
-brew cask install font-fira-code
+brew install --cask font-fira-code
 
 # Install brew auto update
 brew tap domt4/autoupdate
