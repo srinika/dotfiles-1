@@ -2,14 +2,14 @@
 set -e
 
 # Download and install Homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Install Brew Packages
 brew install python
 brew install alfred
 brew install tree
 brew install awscli
-brew insatll aws-cdk
+brew install aws-cdk
 brew install azure-cli
 brew install node
 brew install typescript
