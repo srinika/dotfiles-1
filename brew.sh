@@ -8,14 +8,14 @@ set -e
 brew install python
 brew install alfred
 brew install tree
-brew install awscli
-brew install aws-cdk
+brew install awscli || brew link --overwrite awscli || true
+brew install aws-cdk || brew link --overwrite aws-cdk || true
 brew install azure-cli
 brew install node
 brew install typescript
 brew install serverless
 brew install terraform
-brew install kops
+brew install kops || brew link --overwrite kops || true
 brew install mysql
 brew install git || brew upgrade git || true
 brew install go
