@@ -15,7 +15,7 @@ unset file;
 
 # Plugins
 plugins=(
-   git kubectl osx vscode 
+   git kubectl macos vscode 
 )
 
 # Theme
